@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Ícones Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Nike DevClub - Air Zoom</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo Nike" class="logo">
+    </header>
+
+    <main class="caixa-principal">
+        <div class="caixa-texto">
+            <span class="tag-lancamento">Lançamento Exclusivo</span>
+            <h4>R\$ 799,00</h4>
+            <h1>Nike Air Zoom</h1>
+            <p>
+                Uma passada elástica para qualquer corrida, a sensação familiar e perfeita do Peg retorna para ajudá-lo
+                a atingir seus objetivos. Esta versão tem a mesma capacidade de resposta e suporte neutro que você adora,
+                mas com melhor conforto nas áreas sensíveis do seu pé, como o arco e os dedos.
+            </p>
+
+            <button class="botao-carrinho" onclick="adicionarCarrinho()">
+                <i class="ph ph-shopping-cart-simple"></i>
+                Adicionar ao Carrinho
+            </button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="img/nike1.png" alt="Tênis Nike Air Zoom" class="imagem-tenis">
+        </div>
+    </main>
+
+    <div class="caixa-botoes">
+        <div onclick="mudarVisual('#ccee66', '#a3be52', 'img/nike1.png', this)" class="botoes verde ativo" title="Verde Neon"></div>
+        <div onclick="mudarVisual('#ff9eb5', '#e07a94', 'img/nike3.png', this)" class="botoes rosa" title="Rosa Pastel"></div>
+        <div onclick="mudarVisual('#58cced', '#3aa8c7', 'img/nike2.png', this)" class="botoes azul" title="Azul Celeste"></div>
+    </div>
+
+    <!-- Notificação Toast -->
+    <div id="toast" class="toast">
+        <i class="ph-fill ph-check-circle"></i>
+        <span>Nike Air Zoom adicionado ao carrinho!</span>
+    </div>
+
+    <!-- Rodapé Elaborado -->
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="rodape-info">
+                <div class="rodape-marca">
+                    <img src="img/logo.png" alt="Logo Nike" class="logo-rodape">
+                </div>
+                <span class="copyright-linha">Nike &copy; 2026 . Todos os direitos reservados.</span>
+
+                <div class="rodape-dev">
+                    <span class="dev-label">Desenvolvido por</span>
+                    <a href="https://github.com/edisonjuniordev" target="_blank" rel="noopener noreferrer" class="link-github">
+                        <div class="github-icon-box">
+                            <i class="ph-fill ph-github-logo"></i>
+                        </div>
+                        <div class="github-texto">
+                            <strong>Edison Junior</strong>
+                        </div>
+                        <i class="ph ph-arrow-up-right seta-link"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
